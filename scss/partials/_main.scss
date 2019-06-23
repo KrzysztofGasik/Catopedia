@@ -1,0 +1,10 @@
+.main__window {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    width: 400px;
+    height: 400px;
+}

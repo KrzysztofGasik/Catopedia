@@ -1,0 +1,18 @@
+.random__cat {
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    animation: slowEnter 1.5s;
+    background: transparent;
+    color: #fff;
+    margin: $default-margin;
+    font-weight: 700;
+}
+.random__cat:hover {
+    border-color: red;
+    background: #fff;
+    color: #000;
+}
+img {
+    max-width: 300px;
+}
