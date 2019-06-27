@@ -7,27 +7,14 @@ class CatFacts extends Component {
   };
 
   getNextFact = () => {
-    const pageNumber = Math.floor(Math.random() * (51 - 1 + 1)) + 1;
-    let pageId = Math.floor(Math.random() * (24 - 0 + 1)) + 0;
-    if (pageNumber > 50) {
-      pageId = Math.floor(Math.random() * (14 - 0 + 1)) + 0;
-    }
-
-    const ourHeaders = new Headers();
-
-ourHeaders.append("Content-Type", "application/json");
-
-    fetch(
-      // `http://www.catfact.info/api/v1/facts.json?page=${pageNumber}&per_page=${pageId}`
-      
-      'https://catfact.ninja/fact'
-    )
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+    fetch(proxyUrl+"http://the-cat-fact.herokuapp.com/api/randomfact", {
+    })
       .then(response => response.json())
       .then(data => {
-        console.log(data.facts);
+        console.log(data.data[0].fact);
         this.setState({
-          // cat: data.facts[0].details
-          cat: data
+          cat: data.data[0].fact
         });
       })
       .catch(() => {
@@ -53,7 +40,7 @@ ourHeaders.append("Content-Type", "application/json");
         <button className="random__fact" onClick={this.getNextFact}>
           Random fact
         </button>
-        <span>{this.state.cat}</span>
+        <span className="random__fact__text">{this.state.cat}</span>
       </>
     );
   }
