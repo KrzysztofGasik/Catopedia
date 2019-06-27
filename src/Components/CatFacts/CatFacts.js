@@ -13,14 +13,21 @@ class CatFacts extends Component {
       pageId = Math.floor(Math.random() * (14 - 0 + 1)) + 0;
     }
 
+    const ourHeaders = new Headers();
+
+ourHeaders.append("Content-Type", "application/json");
+
     fetch(
-      `http://www.catfact.info/api/v1/facts.json?page=${pageNumber}&per_page=${pageId}`
+      // `http://www.catfact.info/api/v1/facts.json?page=${pageNumber}&per_page=${pageId}`
+      
+      'https://catfact.ninja/fact'
     )
       .then(response => response.json())
       .then(data => {
         console.log(data.facts);
         this.setState({
-          cat: data.facts[0].details
+          // cat: data.facts[0].details
+          cat: data
         });
       })
       .catch(() => {
