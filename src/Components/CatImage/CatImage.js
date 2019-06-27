@@ -6,10 +6,6 @@ class CatImage extends Component {
     error: false
   };
 
-  // componentDidMount() {
-  //   this.getNextCat();
-  // }
-
   getNextCat = () => {
     fetch("https://aws.random.cat/meow")
       .then(response => response.json())
