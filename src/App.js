@@ -3,8 +3,9 @@ import ReactDom from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "./Components/Header/Header";
 import { Menu } from "./Components/Menu/Menu";
-import "../scss/style.scss";
 import { MainWindow } from "./Components/MainWindow/MainWindow";
+import { Footer } from "./Components/Footer/Footer";
+import "../scss/style.scss";
 
 class App extends Component {
   render() {
@@ -13,9 +14,8 @@ class App extends Component {
         <Header />
         <Menu />
         <MainWindow />
-        <span style={{color: 'white'}}>Photo by Pacto Visual on Unsplash</span>
+        <Footer />
       </BrowserRouter>
-      
     );
   }
 }
