@@ -1,4 +1,4 @@
-.random__cat {
+.random__fact {
     padding: 20px;
     border: 2px solid #fff;
     border-radius: 3px;
@@ -8,12 +8,12 @@
     margin: $default-margin;
     font-weight: 700;
 }
-.random__cat:hover {
+.random__fact:hover {
     border-color: red;
     background: #fff;
     color: #000;
 }
-img {
-    max-width: 300px;
-    max-height: 300px;
+blockquote {
+    text-align: center;
+    color: #fff;
 }
