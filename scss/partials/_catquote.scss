@@ -1,23 +1,28 @@
 .random__quote {
-    padding: 20px;
-    border: 2px solid #fff;
-    border-radius: 3px;
-    animation: slowEnter 2s ease-in-out;
-    background: transparent;
-    color: #fff;
-    margin: $default-margin;
-    font-weight: 700;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  animation: slowEnter 2s ease-in-out;
+  background: transparent;
+  color: #fff;
+  margin: $default-margin;
+  font-weight: 700;
 }
 .random__quote:hover {
-    border-color: red;
-    background: #fff;
-    color: #000;
+  border-color: red;
+  background: #fff;
+  color: #000;
 }
 .random__quote__text {
-    max-width: 350px;
-    background: #fff;
-    color: #000;
+  max-width: 350px;
+  background: #fff;
+  color: #000;
+}
+blockquote {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 15px;
 }
 p {
-    margin-top: 10px;
+  margin-top: 10px;
 }

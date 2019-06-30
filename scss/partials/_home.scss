@@ -1,5 +1,241 @@
 h2 {
-    text-align: center;
-    font-size: 1.5em;
-    animation: slowEnter 2s ease-in-out;
+  text-align: center;
+  font-size: 1.5em;
+  animation: slowEnter 2s ease-in-out;
+}
+
+.home__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.cat {
+  position: relative;
+  margin-top: 100px;
+  animation: slowEnter 2s ease-in-out;
+  @media (max-width: 450px) {
+    height: 100px;
+    width: 100px * 1.13;
+  }
+  @media (min-width: 450px) and (max-width: 900px) {
+    height: 125px;
+    width: 125px * 1.13;
+  }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    height: 150px;
+    width: 150px * 1.13;
+  }
+  @media (min-width: 1200px) {
+    height: 175px;
+    width: 175px * 1.13;
+  }
+}
+
+.head {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  border-radius: 50%;
+}
+
+.ear {
+  position: absolute;
+  top: -20%;
+  height: 40%;
+  width: 25%;
+  background: #fff;
+}
+
+.ear__left {
+  left: -1%;
+  border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
+  transform: rotate(-25deg);
+}
+
+.ear__right {
+  right: -1%;
+  border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
+  transform: rotate(25deg);
+}
+
+.eye__left,
+.eye__right {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  top: 45px;
+}
+.eye__left {
+  left: 35px;
+}
+.eye__right {
+  right: 35px;
+}
+
+.eye__left__circle,
+.eye__right__circle {
+  position: absolute;
+  background: #000;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 5px;
+  left: 8px;
+  animation: blinkEye 1s ease-in-out infinite alternate;
+}
+
+.nose {
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.whisker__left__1,
+.whisker__left__2,
+.whisker__left__3 {
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.whisker__left__1 {
+  top: -22px;
+  left: 0;
+  transform: rotate(-25deg);
+}
+
+.whisker__left__2 {
+  top: -16px;
+  left: 1px;
+  transform: rotate(0deg);
+}
+
+.whisker__left__3 {
+  top: -10px;
+  left: 3px;
+  transform: rotate(25deg);
+}
+
+.whisker__right__1,
+.whisker__right__2,
+.whisker__right__3 {
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.whisker__right__1 {
+  top: -22px;
+  right: 0;
+  transform: rotate(25deg);
+}
+
+.whisker__right__2 {
+  top: -16px;
+  right: 1px;
+  transform: rotate(0deg);
+}
+
+.whisker__right__3 {
+  top: -10px;
+  right: 3px;
+  transform: rotate(-25deg);
+}
+
+.mouth {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  left: 95px;
+  top: 115px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.tongue {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  top: 5px;
+  left: 10px;
+  background: #ff748c;
+  border-radius: 50%;
+  animation: longerTongue 1s ease-in-out infinite alternate;
+}
+
+.nose {
+  @media (max-width: 450px) {
+    left: 45px;
+    top: 55px;
+  }
+  @media (min-width: 450px) and (max-width: 900px) {
+    left: 60px;
+    top: 85px;
+  }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    left: 75px;
+    top: 85px;
+  }
+  @media (min-width: 1200px) {
+    left: 90px;
+    top: 85px;
+  }
+}
+
+.mouth {
+  @media (max-width: 450px) {
+    left: 40px;
+    top: 75px;
+  }
+  @media (min-width: 450px) and (max-width: 900px) {
+    left: 55px;
+    top: 105px;
+  }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    left: 70px;
+    top: 115px;
+  }
+  @media (min-width: 1200px) {
+    left: 85px;
+    top: 115px;
+  }
+}
+
+.eye__left {
+  @media (max-width: 450px) {
+    left: 20px;
+    top: 25px;
+  }
+  @media (min-width: 450px) and (max-width: 900px) {
+    left: 35px;
+  }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    left: 35px;
+  }
+  @media (min-width: 1200px) {
+    left: 55px;
+  }
+}
+.eye__right {
+  @media (max-width: 450px) {
+    right: 20px;
+    top: 25px;
+  }
+  @media (min-width: 450px) and (max-width: 900px) {
+    right: 35px;
+  }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    right: 35px;
+  }
+  @media (min-width: 1200px) {
+    right: 55px;
+  }
 }

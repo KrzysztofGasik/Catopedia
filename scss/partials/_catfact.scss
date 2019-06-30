@@ -1,21 +1,31 @@
 .random__fact {
-    padding: 20px;
-    border: 2px solid #fff;
-    border-radius: 3px;
-    animation: slowEnter 2s ease-in-out;
-    background: transparent;
-    color: #fff;
-    margin: $default-margin;
-    font-weight: 700;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  animation: slowEnter 2s ease-in-out;
+  background: transparent;
+  color: #fff;
+  margin: $default-margin;
+  font-weight: 700;
 }
 .random__fact:hover {
-    border-color: red;
-    background: #fff;
-    color: #000;
+  border-color: red;
+  background: #fff;
+  color: #000;
 }
 .random__fact__text {
-    text-align: center;
-    background: #fff;
-    color: #000;
-    max-width: 350px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  max-width: 350px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.random__fact__errorBox {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }

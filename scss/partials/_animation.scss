@@ -6,3 +6,23 @@
     opacity: 1;
   }
 }
+
+@keyframes longerTongue {
+  0% {
+    transform: translateX(-75%);
+  }
+
+  100% {
+    transform: translateX(75%);
+  }
+}
+
+@keyframes blinkEye {
+  0% {
+    transform: translateX(75%);
+  }
+
+  100% {
+    transform: translateX(-75%);
+  }
+}
