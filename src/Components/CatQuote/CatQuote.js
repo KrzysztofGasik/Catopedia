@@ -125,8 +125,7 @@ const Quotes = [
   },
   {
     nr: 22,
-    quote:
-      `Crash hefted his guitar and played a chord.
+    quote: `Crash hefted his guitar and played a chord.
       ‘My word!’ said Ridcully.
       ‘Sir?’
       ‘That sounded exactly like a cat trying to go to the lavatory through a sewn-up bum.`,
@@ -140,8 +139,7 @@ const Quotes = [
   },
   {
     nr: 24,
-    quote:
-      `You haven’t got the morals of a cat, Gytha Ogg.’
+    quote: `You haven’t got the morals of a cat, Gytha Ogg.’
       ‘Now, Esme, you know that’s not true.’
       ‘All right. You have got the morals of a cat, then.’
       ‘That’s better.`,
@@ -181,7 +179,9 @@ class CatQuote extends Component {
         {this.state.quoteNr > 0 &&
           this.state.quoteArr.map(item => (
             <div key={item.nr}>
-              <blockquote className="random__quote__text">{item.quote}</blockquote>
+              <blockquote className="random__quote__text">
+                {item.quote}
+              </blockquote>
               <p>{item.author}</p>
             </div>
           ))}

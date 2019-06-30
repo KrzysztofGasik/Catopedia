@@ -18,8 +18,8 @@ const MenuElements = [
     icon: "far fa-question-circle"
   },
   {
-    path: "/cat-quotes",
-    name: "Cat quotes",
+    path: "/cat-quote",
+    name: "Cat quote",
     icon: "fas fa-quote-right"
   }
 ];

@@ -5,7 +5,6 @@ import { CatImage } from "../CatImage/CatImage";
 import { CatFacts } from "../CatFacts/CatFacts";
 import { CatQuote } from "../CatQuote/CatQuote";
 
-
 export const MainWindow = () => {
   return (
     <main className="main__window">
@@ -13,7 +12,7 @@ export const MainWindow = () => {
         <Route exact path="/" component={Home} />
         <Route path="/cat-images" component={CatImage} />
         <Route path="/cat-facts" component={CatFacts} />
-        <Route path="/cat-quotes" component={CatQuote} />
+        <Route path="/cat-quote" component={CatQuote} />
       </Switch>
     </main>
   );
