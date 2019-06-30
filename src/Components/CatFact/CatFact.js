@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class CatFacts extends Component {
+class CatFact extends Component {
   state = {
     cat: "",
     error: false
@@ -46,4 +46,4 @@ class CatFacts extends Component {
   }
 }
 
-export { CatFacts };
+export { CatFact };

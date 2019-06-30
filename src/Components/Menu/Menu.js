@@ -8,13 +8,13 @@ const MenuElements = [
     icon: "fas fa-home"
   },
   {
-    path: "/cat-images",
-    name: "Cat images",
+    path: "/cat-image",
+    name: "Cat image",
     icon: "far fa-image"
   },
   {
-    path: "/cat-facts",
-    name: "Cat facts",
+    path: "/cat-fact",
+    name: "Cat fact",
     icon: "far fa-question-circle"
   },
   {
