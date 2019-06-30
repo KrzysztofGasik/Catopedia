@@ -23,7 +23,6 @@ const Home = () => {
             <div className="whisker__right__3" />
           </div>
           <div className="mouth">
-            <div className="tongue" />
           </div>
         </div>
       </div>

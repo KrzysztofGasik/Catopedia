@@ -11,7 +11,6 @@ class CatFact extends Component {
     fetch(proxyUrl + "http://the-cat-fact.herokuapp.com/api/randomfact", {})
       .then(response => response.json())
       .then(data => {
-        console.log(data.data[0].fact);
         this.setState({
           cat: data.data[0].fact
         });
