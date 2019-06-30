@@ -1,3 +1,5 @@
+$time: 1.5s;
+
 @keyframes slowEnter {
   0% {
     opacity: 0;
@@ -7,22 +9,33 @@
   }
 }
 
-@keyframes longerTongue {
+@keyframes blinkEye {
   0% {
-    transform: translateX(-75%);
+    transform: translateY(35%);
   }
 
   100% {
-    transform: translateX(75%);
+    transform: translateY(-35%);
   }
 }
 
-@keyframes blinkEye {
+@keyframes moveMouth {
   0% {
-    transform: translateX(75%);
+    transform: scale(1.0);
   }
-
+  50% {
+    transform: scale(1.25);
+  }
   100% {
-    transform: translateX(-75%);
+    transform: scale(1.0);
+  }
+}
+
+@keyframes moveNose {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
   }
 }
