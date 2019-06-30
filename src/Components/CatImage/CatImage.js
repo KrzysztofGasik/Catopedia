@@ -24,7 +24,7 @@ class CatImage extends Component {
   render() {
     if (this.state.error) {
       return (
-        <div>
+        <div className="random__cat__errorBox">
           <h1>Błąd konmunikacji z serwerem</h1>
           <button>Spróbuj ponownie</button>
         </div>

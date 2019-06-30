@@ -7,9 +7,8 @@ class CatFact extends Component {
   };
 
   getNextFact = () => {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
-    fetch(proxyUrl+"http://the-cat-fact.herokuapp.com/api/randomfact", {
-    })
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    fetch(proxyUrl + "http://the-cat-fact.herokuapp.com/api/randomfact", {})
       .then(response => response.json())
       .then(data => {
         console.log(data.data[0].fact);
@@ -27,7 +26,7 @@ class CatFact extends Component {
   render() {
     if (this.state.error) {
       return (
-        <div>
+        <div className="random__fact__errorBox">
           <h1>Błąd komunikacji z serwerem</h1>
           <button className="random__fact" onClick={this.getNextFact}>
             Spróbuj ponownie
@@ -40,7 +39,7 @@ class CatFact extends Component {
         <button className="random__fact" onClick={this.getNextFact}>
           Random fact
         </button>
-        <span className="random__fact__text">{this.state.cat}</span>
+        <span className={this.state.cat && "random__fact__text"}>{this.state.cat}</span>
       </>
     );
   }

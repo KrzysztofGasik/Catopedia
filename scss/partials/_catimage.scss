@@ -17,3 +17,9 @@ img {
     max-width: 300px;
     max-height: 300px;
 }
+.random__cat__errorBox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
