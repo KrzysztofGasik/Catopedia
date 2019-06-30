@@ -16,6 +16,11 @@ const MenuElements = [
     path: "/cat-facts",
     name: "Cat facts",
     icon: "far fa-question-circle"
+  },
+  {
+    path: "/cat-quotes",
+    name: "Cat quotes",
+    icon: "fas fa-quote-right"
   }
 ];
 
