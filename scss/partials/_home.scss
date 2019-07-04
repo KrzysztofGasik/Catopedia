@@ -14,6 +14,7 @@ h2 {
   position: relative;
   margin-top: 100px;
   animation: slowEnter 2s ease-in-out;
+  animation: moveHead 4s ease-in-out infinite alternate;
   @media (max-width: 450px) {
     height: 100px;
     width: 100px * 1.13;
@@ -38,6 +39,7 @@ h2 {
   width: 100%;
   background: #000;
   border-radius: 50%;
+  
 }
 
 .ear {
@@ -71,6 +73,18 @@ h2 {
   top: 45px;
 }
 
+.eye__close {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 13px;
+  background: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  animation: closeEye 1.75s  ease-in-out infinite;
+  z-index: 1;
+}
+
 .eye__left__circle,
 .eye__right__circle {
   position: absolute;
@@ -80,7 +94,7 @@ h2 {
   border-radius: 50%;
   top: 5px;
   left: 4px;
-  animation: blinkEye $time ease-in-out infinite alternate;
+  // animation: blinkEye $time ease-in-out infinite alternate;
 }
 
 .nose {
