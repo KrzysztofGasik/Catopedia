@@ -9,9 +9,11 @@ const Home = () => {
         <div className="ear ear__right" />
         <div className="head">
           <div className="eye__left">
+            <div className="eye__close" />
             <div className="eye__left__circle" />
           </div>
           <div className="eye__right">
+          <div className="eye__close" />
             <div className="eye__right__circle" />
           </div>
           <div className="nose">

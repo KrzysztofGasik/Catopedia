@@ -1,5 +1,14 @@
 $time: 1.5s;
 
+@keyframes moveHead {
+  0% {
+    transform: rotate(-25deg) translateX(-5px);
+  }
+  100% {
+    transform: rotate(25deg) translateX(10px);
+  }
+}
+
 @keyframes slowEnter {
   0% {
     opacity: 0;
@@ -9,25 +18,27 @@ $time: 1.5s;
   }
 }
 
-@keyframes blinkEye {
+@keyframes closeEye {
   0% {
-    transform: translateY(35%);
+    height: 0;
   }
-
+  50% {
+    height: 50%;
+  }
   100% {
-    transform: translateY(-35%);
+    height: 0;
   }
 }
 
 @keyframes moveMouth {
   0% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
   50% {
     transform: scale(1.25);
   }
   100% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
 
