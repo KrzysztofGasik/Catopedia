@@ -1,11 +1,11 @@
 $time: 1.5s;
 
 @keyframes moveHead {
-  0% {
-    transform: rotate(-25deg) translateX(-5px);
+  from {
+    transform: rotate(0deg) translateX(20px) rotate(0deg);
   }
-  100% {
-    transform: rotate(25deg) translateX(10px);
+  to {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
   }
 }
 

@@ -14,7 +14,7 @@ h2 {
   position: relative;
   margin-top: 100px;
   animation: slowEnter 2s ease-in-out;
-  animation: moveHead 4s ease-in-out infinite alternate;
+  animation: moveHead 2.5s linear infinite;
   @media (max-width: 450px) {
     height: 100px;
     width: 100px * 1.13;
