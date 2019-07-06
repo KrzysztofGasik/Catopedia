@@ -14,7 +14,6 @@ h2 {
   position: relative;
   margin-top: 100px;
   animation: slowEnter 2s ease-in-out;
-  animation: moveHead 2.5s linear infinite;
   @media (max-width: 450px) {
     height: 100px;
     width: 100px * 1.13;
@@ -75,13 +74,13 @@ h2 {
 .eye__close {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 13px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
   background: #fff;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  animation: closeEye 1.75s ease-in-out infinite;
-  z-index: 1;
+  animation: closeEye 4s ease-in-out infinite alternate;
 }
 
 .eye__left__circle,
@@ -93,7 +92,6 @@ h2 {
   border-radius: 50%;
   top: 5px;
   left: 4px;
-  // animation: blinkEye $time ease-in-out infinite alternate;
 }
 
 .nose {
